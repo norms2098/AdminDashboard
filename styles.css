@@ -213,15 +213,41 @@ li{
 }
 .othercontent-container{
     grid-row:1/3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+}
+.othercontent-container h2{
+    margin-bottom:5px;
 }
 .announcement-card,.trending-card{
     background-color: white;
-    height:auto;
-    width:auto;
+    height:40vh;
+    width:20vw;
     border: 2px solid black;
     padding:10px;
-    overflow: hidden;
+    overflow: auto;
     border-radius: 15px;
+}
+.announcement-card li,.trending-card li{
+    border-bottom: #e5552f 1px solid;
+}
+.announcement-card ul,.trending-card ul{
+    padding:0;
+}
+.announcement-card li >div,.trending-card li>div {
+    height:30px;
+    width:17vw;
+    overflow: hidden;
+    
+}
+.announcement-card h4, .trending-card h4{
+    margin-bottom:0;
+}
+.announcement-card p, .trending-card p{
+    margin-top:5px;
+    font-size:x-small;
 }
 /*.content-card,.announcement-card,.trending-card{
     box-shadow: 5px 5px 20px black ;
